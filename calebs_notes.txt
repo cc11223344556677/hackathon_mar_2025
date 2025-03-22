@@ -17,12 +17,15 @@ Project Goals:
 10. Continuous knowledge development
 
 LLM Workshop:
-- Retrieval-Augmented Generation (RAG). Selectively feed context window with relevant information. (Keywords, query, semantic embeddings). For better performance: Decomposiition, Hypothetical Document Embeddings; Ask LLM to produce hypohectical answers and compare answers for similarity.
-- Tool Calling: givce the LLM a clearly defined set of arguments and outputs. Use to call APIs, calcs, code exec, etc. Can be colled optionally by LLM based on prompt. 
+- Retrieval-Augmented Generation (RAG). Selectively feed context window with relevant information. (Keywords, query, semantic embeddings). 
+For better performance: Decomposiition, Hypothetical Document Embeddings; Ask LLM to produce hypohectical answers and compare answers for similarity.
+- Tool Calling: givce the LLM a clearly defined set of arguments and outputs. Use to call APIs, calcs, code exec, etc. 
+Can be colled optionally by LLM based on prompt. 
 Agents (6-7 tools): Let LLM pick its own conrol flow. (Planning which tools, Memory from earlier, Human prompting, Self-eval)
 - Multi-Agent Systems: Collaboration between agents (agent as tool) Sub-Agents can have very targeted tasks. Define scenarios in which to hand-off task to subagent. 
 - Structured output: Force the model to output structured data (ie JSON) so that output can be more rigorously typed. 
-- Hallucination: use RAG, fine tune for specific domains, Use prompt engineering to provide off-ramps in case of doubt, chain of thought, limit to verified inputs, fact-checking agent, concensus, human-in-the-loop
+- Hallucination: use RAG, fine tune for specific domains, Use prompt engineering to provide off-ramps in case of doubt, chain of thought, 
+limit to verified inputs, fact-checking agent, concensus, human-in-the-loop
 
 TOOLS: 
 - Langchain. Abstraction of LLM APIs. LangGraph for agents, LangSmith for observability. 
@@ -30,7 +33,8 @@ TOOLS:
 - Lovable.app useful for prototyping front-end UI's.
 
 CHALLENGE: ,
-Use rag. 87k (use subset, chunk by topic, time, section, author, etc) articles from 1998 to 2023 with metadata (date, author, title, category, section, word count, tags). Tags assigned using with model (financial crisis, fake news etc) so they may be inaccurate. valid_indicator provided as heuristic for accuracy. 
+Use rag. 87k (use subset, chunk by topic, time, section, author, etc) articles from 1998 to 2023 with metadata (date, author, title, category, section, word count, tags). 
+Tags assigned using with model (financial crisis, fake news etc) so they may be inaccurate. valid_indicator provided as heuristic for accuracy. 
 
 EXAMPLE IDEAS: 
 - Chatbots (on specific topic, to personalize articles)
